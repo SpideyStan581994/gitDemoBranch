@@ -23,11 +23,19 @@ public class HelloWorldController {
         return "Hello " + name + " are you ready to blast? 3. 2. 1. ....  KABOOM!!";
     }
 
+
+    @GetMapping("/animals")
+    public List<String> showAllAnimals(){
+        String animal = "Lion";
+        String animal2 = "Tiger";
+
+        return List.of(animal,animal2);
+    }
+
     @GetMapping("/person")
     public List<String> showAllPerson(){
         String person1 = "Steven";
         String person2 = "Jay";
-
         return List.of(person1,person2);
     }
 
