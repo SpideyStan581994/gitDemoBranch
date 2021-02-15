@@ -46,6 +46,16 @@ public class HelloWorldController {
         return List.of(person1,person2);
     }
 
+    @GetMapping("/Dog")
+    public List<String> showAllDog(){
+        String dog1 = "Bulldog";
+        String dog2 = "Shitszu";
+
+        return List.of(dog1,dog2);
+    }
+
+    
+
 
 
     
