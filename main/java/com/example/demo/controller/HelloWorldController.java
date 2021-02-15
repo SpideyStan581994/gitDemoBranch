@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,6 +21,14 @@ public class HelloWorldController {
     public String kaboom(@RequestParam(name = "name", defaultValue = "none") String name)
     {
         return "Hello " + name + " are you ready to blast? 3. 2. 1. ....  KABOOM!!";
+    }
+
+    @GetMapping("/person")
+    public List<String> showAllPerson(){
+        String person1 = "John";
+        String person2 = "simon";
+
+        return List.of(person1,person2);
     }
 
 
