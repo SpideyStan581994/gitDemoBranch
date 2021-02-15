@@ -23,6 +23,13 @@ public class HelloWorldController {
         return "Hello " + name + " are you ready to blast? 3. 2. 1. ....  PIKACHU!!";
     }
 
+    @GetMapping("/coffe")
+    public List<String>  showAllCoffee(){
+        String coffee1 = "Mocha";
+        String coffee2 = "Dark Coffee";
+        return List.of(coffee2,coffee1);
+        }
+
     @GetMapping("/cars")
     public List<String> showAllCar(){
         String car1 = "Toyota";
