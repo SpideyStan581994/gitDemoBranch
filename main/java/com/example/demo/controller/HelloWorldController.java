@@ -27,9 +27,17 @@ public class HelloWorldController {
     public List<String> showAllCar(){
         String car1 = "Toyota";
         String car2 = "Mitsubishi";
-
         return List.of(car1,car2);
         }
+
+    @GetMapping("/animals")
+    public List<String> showAllAnimals(){
+        String animal = "Lion";
+        String animal2 = "Tiger";
+        return List.of(animal,animal2);
+    }
+    
+
     @GetMapping("/person")
     public List<String> showAllPerson(){
         String person1 = "John";
