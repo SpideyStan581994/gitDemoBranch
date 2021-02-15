@@ -18,7 +18,7 @@ public class HelloWorldController {
     @GetMapping("/kaboom")
     public String kaboom(@RequestParam(name = "name", defaultValue = "none") String name)
     {
-        return "Hello " + name + " are you ready to blast? 3. 2. 1. ....  KABOOM!!";
+        return "Hello " + name + " are you ready to blast? 3. 2. 1. ....  PIKACHU!!";
     }
 
 
