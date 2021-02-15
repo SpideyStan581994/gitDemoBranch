@@ -31,6 +31,7 @@ public class HelloWorldController {
             String coffee1 = "Mocha";
             String coffee2 = "Dark Coffee";
             return List.of(coffee2,coffee1);
+        
 
         }
         else if(item.equals("car")){
@@ -61,9 +62,6 @@ public class HelloWorldController {
         else{
             return List.of("No Item Selected.");
         }
-
-
-
 
     }
 
