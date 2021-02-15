@@ -29,6 +29,12 @@ public class HelloWorldController {
         String car2 = "Mitsubishi";
         return List.of(car1,car2);
         }
+        @GetMapping("/stupidcars")
+    public List<String> showAllStupidCar(){
+        String car1 = "Toyota";
+        String car2 = "Mitsubishi";
+        return List.of(car1,car2);
+        }
 
     @GetMapping("/animals")
     public List<String> showAllAnimals(){
