@@ -23,7 +23,15 @@ public class HelloWorldController {
         return "Hello " + name + " are you ready to blast? 3. 2. 1. ....  PIKACHU!!";
     }
 
-    @GetMapping("/coffe")
+    @GetMapping("/programmer")
+    public List<String>  showAllProgrammer(){
+        String programmer1 = "UI/UX";
+        String programmer2 = "Java";
+        return List.of(programmer1,programmer2);
+        }
+
+
+    @GetMapping("/coffee")
     public List<String>  showAllCoffee(){
         String coffee1 = "Mocha";
         String coffee2 = "Dark Coffee";
