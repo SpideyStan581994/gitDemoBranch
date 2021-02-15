@@ -23,6 +23,14 @@ public class HelloWorldController {
         return "Hello " + name + " are you ready to blast? 3. 2. 1. ....  KABOOM!!";
     }
 
+    @GetMapping("/cars")
+    public List<String> showAllCar(){
+        String car1 = "Toyota";
+        String car2 = "Mitsubishi";
+
+        return List.of(car1,car2);
+    }
+
     @GetMapping("/person")
     public List<String> showAllPerson(){
         String person1 = "John";
