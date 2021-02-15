@@ -25,8 +25,8 @@ public class HelloWorldController {
 
     @GetMapping("/person")
     public List<String> showAllPerson(){
-        String person1 = "John";
-        String person2 = "simon";
+        String person1 = "Steven";
+        String person2 = "Jay";
 
         return List.of(person1,person2);
     }
